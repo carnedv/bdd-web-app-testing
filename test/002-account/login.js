@@ -7,6 +7,7 @@ var config = require('../config.js')(),
 	browser = new zombie(),
 	chai = require('chai');
 
+chai.Assertion.includeStack = true;
 chai.should();
 
 beforeEach(function(done)
